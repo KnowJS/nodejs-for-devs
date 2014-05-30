@@ -1,13 +1,16 @@
 #node-for-devs
-A non-Noder's guide to getting dangerous with Node.js in a day. presenters: Matt Walters & Sahat Yalkabov
+==============
+##Getting dangerous w/ Node.js in a day
+presenters: Matt Walters & Sahat Yalkabov
 
-Get up and running with nvm, npm, Node.js and Express.
-Learn fundamental Node and JavaScript concepts like callbacks, events, and promises.
-Become familiar with some of Node's most popular modules and learn their benefits.
-Bootstrap a site and API with the latest tools like yeoman, bower, and others.
-Deploy your site to heroku or a cloud of your choice.
+Today we will: 
+- Get up and running with nvm, npm, Node.js and Express.
+- Learn fundamental Node and JavaScript concepts like callbacks, events, and promises.
+- Become familiar with some of Node's most popular modules and learn their benefits.
+- Bootstrap a site and API with the latest tools like yeoman, bower, and others.
+- Deploy your site to heroku or a cloud of your choice.
 
-##Get up and running with nvm, npm, Node.js and Express.
+---
 
 ###9am - 9:30am : Getting Setup (For anyone who isn't yet)
 - install node
@@ -15,6 +18,8 @@ Deploy your site to heroku or a cloud of your choice.
   - (even better) https://github.com/creationix/nvm
 - have an editor installed
   - http://www.sublimetext.com/2
+
+---
 
 ###9:30am - 10:30am : Groking JavaScript - brief language overiew, callbacks, events, and promises
 - numbers, arrays, objects (which are just associative arrays), & functions (which are just a special type of object)
