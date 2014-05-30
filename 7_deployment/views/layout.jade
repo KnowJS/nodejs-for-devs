@@ -1,0 +1,11 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='stylesheets/style.css')
+    block bundle_script
+      script(src='javascripts/bundle.js')
+  body
+    .container
+      include ./header
+      block content

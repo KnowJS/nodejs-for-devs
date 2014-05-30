@@ -1,0 +1,28 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.5.0",
+    "jade": "*",
+    "passport": "~0.2.0",
+    "passport-github": "~0.1.5",
+    "envify": "~1.2.1",
+    "react": "~0.10.0",
+    "gm": "~1.14.2"
+  },
+  "devDependencies": {
+    "gulp": "~3.5.6",
+    "gulp-browserify": "~0.5.0",
+    "connect-livereload": "~0.3.2",
+    "tiny-lr": "0.0.5",
+    "gulp-embedlr": "~0.5.2",
+    "gulp-concat": "~2.2.0",
+    "gulp-css": "0.0.2",
+    "gulp-ember-handlebars": "~0.6.0",
+    "reactify": "~0.10.0"
+  }
+}

@@ -1,0 +1,19 @@
+nav.navbar.navbar-default(role="navigation")
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href="/") KnowJS!
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav.right
+        - if (user === undefined)
+          li
+            a(href="/login") Login with Github
+        - else
+          li
+            a(href="/account") Account
+          li
+            a(href="/logout") Logout

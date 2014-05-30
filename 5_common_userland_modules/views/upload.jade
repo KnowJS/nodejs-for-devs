@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  form(method="post", enctype="multipart/form-data")
+    p Image:
+      input(type="file", name="image")
+    p
+      input(type="submit", value="Upload")

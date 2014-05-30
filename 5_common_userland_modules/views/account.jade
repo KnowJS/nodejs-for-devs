@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .col-md-offset-2.col-sm-6
+    form.form-horizontal(role="form")
+      .form-group
+        fieldset
+          legend Account Info
+          .form-group
+            label.col-sm-2.control-label(for='userId') ID 
+            .col-sm-6
+              input.form-control(type="text", name="userId", value="#{user.id}", disabled).form-control#userId 
+      
+          .form-group
+            label.col-sm-2.control-label(for='username') GitHub Username 
+            .col-sm-6
+              input.form-control(type="text", name="username", value="#{user.username}", disabled).form-control#username 
+      
+          .form-group
+            label.col-sm-2.control-label(for='displayName') Name 
+            .col-sm-6
+              input.form-control(type="text", name="displayName", value="#{user.displayName}", disabled).form-control#displayName 
+      
+          .form-group
+            label.col-sm-2.control-label(for='userId') Email 
+            .col-sm-6
+              input.form-control(type="text", name="email", value="#{user.emails[0].value}", disabled).form-control#email 
