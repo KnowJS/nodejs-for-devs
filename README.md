@@ -136,6 +136,6 @@ Deploy your site to heroku or a cloud of your choice.
 
 ---
 
-###:5:20 - 6:00pm - Deploying to heroku
+###5:20 - 6:00pm - Deploying to heroku
 - adding a Procfile
 - Problem: heroku create, git push heroku master
