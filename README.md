@@ -1,6 +1,6 @@
-node-for-devs
+node.js-for-devs
 ==============
-##Getting dangerous w/ Node.js in a day
+##Getting dangerous w/ Node in a day
 presenters: Matt Walters & Sahat Yalkabov
 
 ####Today we will: 
