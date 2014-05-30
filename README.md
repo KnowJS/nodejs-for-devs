@@ -103,17 +103,10 @@ Today we will:
 ---
 
 ###1:55pm - 3:15pm - Common Modules and Frameworks pt. 1
-- _npm home_ express
-- _npm home_ connect
-- _npm home_ jade
-- _npm home_ mongoose
-- _npm home_ request
-- _npm home_ underscore (or lodash)
-- _npm home_ async
-- _npm home_ bluebird
-- _npm home_ mocha
-- _npm home_ passport.js
-- Pro Tip: Favor modu
+- '_npm home_ express', connect, jade
+- '_npm home_ underscore' (or lodash), async, bluebird
+- '_npm home_ mocha', request, mongoose, passport.js
+- Pro Tip: Favor modules that do one thing, but do it well. Compose these modules into larger modules and solutions.
 - Pro Tip: Navigating and learning to use modules - View the tests and examples!
   - learn connect and its usage inside express, by navigating express' node_modules
   - Note: Express 4.0 will not include middleware anymore. You'll need to include each in your package.json. This makes express, itself, and your apps more maintainable.
