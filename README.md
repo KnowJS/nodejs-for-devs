@@ -3,7 +3,8 @@ node-for-devs
 ##Getting dangerous w/ Node.js in a day
 presenters: Matt Walters & Sahat Yalkabov
 
-Today we will: 
+####Today we will: 
+
 - Get up and running with nvm, npm, Node.js and Express.
 - Learn fundamental Node and JavaScript concepts like callbacks, events, and promises.
 - Become familiar with some of Node's most popular modules and learn their benefits.
