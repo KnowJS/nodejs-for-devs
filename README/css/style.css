@@ -1,3 +1,5 @@
+
+
 html {
   overflow: hidden;
 }
@@ -103,18 +105,16 @@ a {
   pointer-events: none;	/* Fix Body Click */
   color: inherit;
   text-decoration: none;
-  text-shadow: -1px -1px 2px rgba(100,100,100,0.9);
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -ms-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
   font-weight:bold;
 }
 
 a:hover {
-  color: #333;
-  text-shadow: -1px -1px 2px rgba(100,100,100,0.5);
+  color: royalblue;
 }
 
 p {
@@ -199,4 +199,18 @@ span,strong {
   -ms-transition-delay: 0.5s;
   -o-transition-delay: 0.5s;
   transition-delay: 0.5s;
+}
+
+em {
+  font-style: normal;
+  color: #80bd01;
+}
+
+.center {
+  text-align: center;
+}
+
+.heading {
+  font-size: 190px;
+  line-height: 140px;
 }
