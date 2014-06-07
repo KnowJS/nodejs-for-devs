@@ -1,9 +1,12 @@
-node.js-for-devs
-==============
-##Get dangerous w/ Node in a day
-presenters: Matt Walters & Sahat Yalkabov
+# ***node.js*** for devs
 
-####Today we will: 
+---
+
+## Get dangerous w/ Node in a day
+
+Presenters: Matt Walters & Sahat Yalkabov
+
+#### Today we will:
 
 - Get up and running with nvm, npm, Node.js and Express.
 - Learn fundamental Node and JavaScript concepts like callbacks, events, and promises.
@@ -13,7 +16,7 @@ presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-###9am - 9:30am : Getting Setup (For anyone who isn't yet)
+### 9am - 9:30am : Getting Setup (For anyone who isn't yet)
 - install node
   - http://nodejs.org/download/
   - (even better) https://github.com/creationix/nvm
@@ -22,7 +25,7 @@ presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-###9:30am - 10:30am : Groking JavaScript - brief language overiew, callbacks, events, and promises
+### 9:30am - 10:30am : Groking JavaScript - brief language overiew, callbacks, events, and promises
 - numbers, arrays, objects (which are just associative arrays), & functions (which are just a special type of object)
 - asynchronous - callbacks, events & promises
 - variable scope, lifting, closures 
@@ -36,7 +39,7 @@ presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-###10 min break 
+# 10 min break
 
 ---
 
@@ -55,7 +58,7 @@ presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-###11:15pm - 12:00pm : NPM and Modules
+### 11:15pm - 12:00pm : NPM and Modules
 - npm init, search, info, install (& -g), update, home
   - --save, --save-dev
   - semver
@@ -68,7 +71,7 @@ presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-###12:00pm - 1:15pm : Lunch 
+### 12:00pm - 1:15pm : Lunch
 - lunchtime preview: 
   - coffee-script in your applications
   - coffee-script in your modules
@@ -76,7 +79,7 @@ presenters: Matt Walters & Sahat Yalkabov
 ---
 
 
-###1:00pm - 1:45pm - Common Core Modules
+### 1:00pm - 1:45pm - Common Core Modules
 - console, process, events, stream, http, util, child_process
 - events - on vs once, 'error' and 'uncaughtException'
 - streams! just like unix pipes, in code - readable, writeable, duplex, transform
@@ -99,7 +102,7 @@ presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-###10 min break
+# 10 min break
 
 ---
 
@@ -123,11 +126,11 @@ presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-###10 min break
+# 10 min break
 
 ---
 
-###3:25 - 4:30pm - Start Hacking
+### 3:25 - 4:30pm - Start Hacking
 - Hackathon Starter https://github.com/sahat/hackathon-starter#how-it-works-mini-guides
 - git clone, run
 - what's included
@@ -135,6 +138,27 @@ presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-###4:30 - 5:00pm - Deploying to heroku
+### 4:30 - 5:00pm - Deploying to heroku
 - adding a Procfile
 - Problem: heroku create, git push heroku master
+
+---
+
+## **async:** waterfall
+
+```javascript
+async.waterfall([
+  function(callback) {
+    callback(null, 'one', 'two');
+  },
+  function(arg1, arg2, callback) {
+    // Here arg1 is 'one' and arg2 is 'two'
+    callback(null);
+  },
+], function(err, results) {
+  // Optional callback when everything is finished
+});
+```
+
+---
+
