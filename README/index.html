@@ -28,11 +28,13 @@
     <div id="impress">
     <div class='step' >
     
-<h1>node.js-for-devs</h1>
-
+<h1><strong><em>node.js</em></strong> for devs</h1>
+</div>
+      <div class='step' >
+    
 <h2>Get dangerous w/ Node in a day</h2>
 
-<p>presenters: Matt Walters &amp; Sahat Yalkabov</p>
+<p>Presenters: Matt Walters &amp; Sahat Yalkabov</p>
 
 <h4>Today we will:</h4>
 
@@ -84,7 +86,7 @@
 </div>
       <div class='step' >
     
-<h3>10 min break</h3>
+<h1>10 min break</h1>
 </div>
       <div class='step' >
     
@@ -181,7 +183,7 @@
 </div>
       <div class='step' >
     
-<h3>10 min break</h3>
+<h1>10 min break</h1>
 </div>
       <div class='step' >
     
@@ -215,7 +217,7 @@
 </div>
       <div class='step' >
     
-<h3>10 min break</h3>
+<h1>10 min break</h1>
 </div>
       <div class='step' >
     
@@ -235,6 +237,65 @@
 <ul>
 <li>adding a Procfile</li>
 <li>Problem: heroku create, git push heroku master</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2><strong>async:</strong> waterfall</h2>
+<pre><code class='prettyprint javascript'>async.waterfall([
+  function(callback) {
+    callback(null, 'one', 'two');
+  },
+  function(arg1, arg2, callback) {
+    // Here arg1 is 'one' and arg2 is 'two'
+    callback(null);
+  },
+], function(err, results) {
+  // Optional callback when everything is finished
+});
+</code></pre></div>
+      <div class='step' >
+    
+<h2><strong>node.js:</strong> cluster</h2>
+<pre><code class='prettyprint javascript'>var os = require('os');
+var cluster = require('cluster');
+
+cluster.setupMaster({
+  exec: 'app.js'
+});
+
+cluster.on('exit', function(worker) {
+  console.log('Worker ' + worker.id + ' died');
+  cluster.fork();
+});
+
+for (var i = 0; i < os.cpus().length; i++) {
+  cluster.fork();
+}
+</code></pre></div>
+      <div class='step' >
+    
+<h1><strong>Bonus</strong></h1>
+</div>
+      <div class='step' >
+    
+<h2>Express REST API</h2>
+
+<ul>
+<li><a href="http://scotch.io/tutorials/javascript/build-a-restful-api-using-node-and-express-4">Build a RESTful API Using Node and Express 4</a></li>
+<li><a href="http://sahatyalkabov.com/create-a-tv-show-tracker-using-angularjs-nodejs-and-mongodb/">Create a TV Show Tracker using AngularJS, Node.js and MongoDB</a></li>
+</ul>
+
+<h2>File Upload</h2>
+
+<ul>
+<li><a href="http://jsrecipes.org/#!/backend/uploading-files">Upload files with Node.js</a></li>
+</ul>
+
+<h2>CSRF Protection</h2>
+
+<ul>
+<li><a href="http://jsrecipes.org/#!/backend/csrf-protection-with-express">CSRF Protection with Express</a></li>
 </ul>
 
       </div>

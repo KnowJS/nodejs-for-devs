@@ -184,6 +184,19 @@ for (var i = 0; i < os.cpus().length; i++) {
 
 ---
 
-## **Additional** Resources
+# **Bonus**
 
-[]
+---
+
+## Express REST API
+
+- [Build a RESTful API Using Node and Express 4](http://scotch.io/tutorials/javascript/build-a-restful-api-using-node-and-express-4)
+- [Create a TV Show Tracker using AngularJS, Node.js and MongoDB](http://sahatyalkabov.com/create-a-tv-show-tracker-using-angularjs-nodejs-and-mongodb/)
+
+## File Upload
+
+- [Upload files with Node.js](http://jsrecipes.org/#!/backend/uploading-files)
+
+## CSRF Protection
+
+- [CSRF Protection with Express](http://jsrecipes.org/#!/backend/csrf-protection-with-express)

@@ -96,9 +96,14 @@ table {
   pointer-events: auto;	/* Enable Click on link */
 }
 
+pre code {
+  background: #fff;
+}
+
 code {
   font-size: 30px;
   line-height: 36px;
+  font-family: Inconsolata, monospace;
 }
 
 a {
