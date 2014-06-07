@@ -92,7 +92,7 @@ Presenters: [Matt Walters](http://github.com/mateodelnorte) & [Sahat Yalkabov](h
 ## 1:00pm - 1:45pm - Common Core Modules
 - console, process, events, stream, http, util, child_process
 - events - on vs once, 'error' and 'uncaughtException'
-- streams! just like unix pipes, in code - readable, writeable, duplex, transform
+- streams! like unix pipes, in code - readable, writeable, duplex, transform
   - flowing mode vs non-flowing mode
   - https://github.com/substack/stream-handbook
 - Pro Tip: https://github.com/isaacs/readable-stream
