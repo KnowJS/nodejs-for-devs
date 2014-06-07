@@ -4,23 +4,28 @@
 
 ## Get dangerous w/ Node in a day
 
-Presenters: Matt Walters & Sahat Yalkabov
+Presenters: [Matt Walters](http://github.com/mateodelnorte) & [Sahat Yalkabov](http://github.com/sahat)
 
-#### Today we will:
-
+### Today we will:  
+  
 - Get up and running with nvm/n, npm, Node.js and Express.
 - Learn fundamental Node and JavaScript concepts like callbacks, events, and promises.
 - Become familiar with some of Node's most popular modules and learn their benefits.
 - Bootstrap a site and API with the latest tools like yeoman, bower, and others.
 - Deploy your site to heroku or a cloud of your choice.
 
+### And more importantly:
+
+- Teach you where look in order to more easily understand and learn Node on your own time. 
+
 ---
 
-### 9am - 9:30am : Getting Setup (For anyone who isn't yet)
+## 9am-9:30am: Getting Setup 
+### (For anyone who isn't yet)
 - install node
   - http://nodejs.org/download/
-  - (even better) https://github.com/creationix/nvm
-  - or https://github.com/visionmedia/n
+    - (even better) https://github.com/creationix/nvm 
+    - or https://github.com/visionmedia/n
 - have an editor installed
   - vi + http://vim.spf13.com/
   - http://www.sublimetext.com/2
@@ -29,7 +34,8 @@ Presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-### 9:30am - 10:30am : Groking JavaScript - brief language overiew, callbacks, events, and promises
+## 9:30am-10:30am: Groking JavaScript
+### brief language overiew, callbacks, events, and promises
 - numbers, arrays, objects (which are just associative arrays), & functions (which are just a special type of object)
 - asynchronous - callbacks, events & promises
 - variable scope, lifting, closures 
@@ -38,6 +44,7 @@ Presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
+## 9:30am-10:30am: Groking JavaScript
 - Joint Walkthrough Coding:  Exploring and getting used to different code control flow techniques for asynchronous calls in JS. 
 - Pro Tip: refer to https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
 - More Learning: http://nodeschool.io/#functionaljs
@@ -50,7 +57,7 @@ Presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-###10:40am - 11:15am : Groking Node
+## 10:40am - 11:15am: Groking Node
 - Understanding V8
 - Understanding the Event Loop & async IO
   - http://stackoverflow.com/a/14797359/602377
@@ -65,7 +72,7 @@ Presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-### 11:15pm - 12:00pm : NPM and Modules
+## 11:15pm - 12:00pm: NPM and Modules
 - npm init, search, info, install (& -g), update, home
   - --save, --save-dev
   - semver
@@ -78,11 +85,11 @@ Presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-## 12:00pm - 1:15pm : Lunch
+## 12:00pm - 1:00pm: Lunch
 
 ---
 
-### 1:00pm - 1:45pm - Common Core Modules
+## 1:00pm - 1:45pm - Common Core Modules
 - console, process, events, stream, http, util, child_process
 - events - on vs once, 'error' and 'uncaughtException'
 - streams! just like unix pipes, in code - readable, writeable, duplex, transform
@@ -95,6 +102,7 @@ Presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
+## 1:00pm - 1:45pm - Common Core Modules
 - More Learning:  http://nodeschool.io/#stream-adventure
   - http://nodestreams.com/
   - https://github.com/substack/stream-handbook
@@ -109,7 +117,7 @@ Presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-###1:55pm - 3:15pm - Common Modules and Frameworks pt. 1
+## 1:55pm - 3:15pm - Common Userland Modules
 - '_npm home_ express', connect, jade
 - '_npm home_ underscore' (or lodash), async, bluebird
 - '_npm home_ mocha', request, mongoose, passport.js
@@ -120,13 +128,17 @@ Presenters: Matt Walters & Sahat Yalkabov
 
 ---  
 
-- Problem: Create a simple express app that lets you upload an image, which is then shown to the user.
-  - to complete this you'll create a simple express site, add routes and views which present a form to a user and accept a multipart POST from the form. 
-  - Bonus 1: use the 'gm' module to resize your images upon upload to save a thumbnail as well as original message. 
-  - Bonus 2: use the 'async' module to create three different sizes of your uploaded image.
+## 1:55pm - 3:15pm - Common Userland Modules
+Problem:
 
-- More Learning: http://nodeschool.io/#expressworks
-- https://github.com/mcavage/node-restify
+  - 1) Create a simple express app that lets you upload an image, which is then shown to the user. (To complete this you'll create a simple express site, add routes and views which present a form to a user and accept a multipart POST from the form.)
+  - Bonus 1) use the 'gm' module to resize your images upon upload to save a thumbnail as well as original message. 
+  - Bonus 2) use the 'async' module to create three different sizes of your uploaded image.
+
+More Learning: 
+
+  - http://nodeschool.io/#expressworks
+  - https://github.com/mcavage/node-restify
 
 ---
 
@@ -134,17 +146,35 @@ Presenters: Matt Walters & Sahat Yalkabov
 
 ---
 
-### 3:25 - 4:30pm - Start Hacking
-- Hackathon Starter https://github.com/sahat/hackathon-starter#how-it-works-mini-guides
-- git clone, run
-- what's included
-- Problem: [how should we have them modify hackathon starter?]
+## 3:25 - 4:30pm - Start Hacking
+- '_npm home_ yoeman'
+- '_npm home_ bower'
+- '_npm home_ browserify'
+- '_npm home_ gulp'
+- '_npm home_ http-proxy'
 
 ---
 
-### 4:30 - 5:00pm - Deploying to heroku
+## 3:25 - 4:30pm - Start Hacking
+Problems: 
+
+  - 1) Install yoeman, install the 'browserify' generator and generate a new site. Choose gulp when asked to do so. (if you have issues with SASS, redo and choose not to install when generating).
+  - 2) Update the site you just created to make an ajax call back to a route to request some data. Display that data on the page. (You'll create an express route to do this)
+  - 3) Separate your API from your site by creating a new express site and a proxy using http-proxy. Keep each in a separate folder and start each individually, on different ports. Have your proxy direct all requests to the api subdomain of your app to your proxy and all other requests to your site.
+
+---
+
+## 4:30 - 5:00pm - Deploying to heroku
 - adding a Procfile
-- Problem: heroku create, git push heroku master
+- starting multiple executables
+
+Problem: 
+
+- create a Procfile, heroku create, git push heroku master
+
+---
+
+# **More Learning:**
 
 ---
 
@@ -185,10 +215,6 @@ for (var i = 0; i < os.cpus().length; i++) {
   cluster.fork();
 }
 ```
-
----
-
-# **More Learning:**
 
 ---
 

@@ -13,7 +13,7 @@ body {
 }
 
 .step {
-  width: 1060px;
+  width: 1350px;
   padding: 40px 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -66,6 +66,7 @@ h1 {
 }
 
 h2 {
+  border-bottom: solid thin #80bd01;
   font-size: 48px;
   font-weight: 300;
   letter-spacing: .1em;
