@@ -15,8 +15,6 @@
 <script>hljs.initHighlightingOnLoad();</script>
 
     <link href="css/style.css" rel="stylesheet" />
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,800italic,300,400,800' rel='stylesheet' type='text/css'>    
-
 
   </head>
 
@@ -39,7 +37,7 @@
 <h4>Today we will:</h4>
 
 <ul>
-<li>Get up and running with nvm, npm, Node.js and Express.</li>
+<li>Get up and running with nvm/n, npm, Node.js and Express.</li>
 <li>Learn fundamental Node and JavaScript concepts like callbacks, events, and promises.</li>
 <li>Become familiar with some of Node&#39;s most popular modules and learn their benefits.</li>
 <li>Bootstrap a site and API with the latest tools like yeoman, bower, and others.</li>
@@ -56,11 +54,15 @@
 <ul>
 <li><a href="http://nodejs.org/download/">http://nodejs.org/download/</a></li>
 <li>(even better) <a href="https://github.com/creationix/nvm">https://github.com/creationix/nvm</a></li>
+<li>or <a href="https://github.com/visionmedia/n">https://github.com/visionmedia/n</a></li>
 </ul></li>
 <li>have an editor installed
 
 <ul>
+<li>vi + <a href="http://vim.spf13.com/">http://vim.spf13.com/</a></li>
 <li><a href="http://www.sublimetext.com/2">http://www.sublimetext.com/2</a></li>
+<li><a href="http://www.jetbrains.com/webstorm/">http://www.jetbrains.com/webstorm/</a></li>
+<li>Visual Studio + <a href="https://nodejstools.codeplex.com/">https://nodejstools.codeplex.com/</a></li>
 </ul></li>
 </ul>
 </div>
@@ -74,8 +76,13 @@
 <li>variable scope, lifting, closures </li>
 <li>use strict</li>
 <li>the event loop </li>
-<li>Pro Tip: refer to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript</a></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<ul>
 <li>Joint Walkthrough Coding:  Exploring and getting used to different code control flow techniques for asynchronous calls in JS. </li>
+<li>Pro Tip: refer to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript</a></li>
 <li>More Learning: <a href="http://nodeschool.io/#functionaljs">http://nodeschool.io/#functionaljs</a>
 
 <ul>
@@ -127,22 +134,13 @@
 <li>Node.js module-making mantras (small, tested, single purpose, compose-able)</li>
 <li>npm publish</li>
 <li>Pro Tip: npm link</li>
-<li>Pro Tip: how to re-use modules privately using github tarballs</li>
+<li>Pro Tip: re-use private modules using github tarballs in package.json</li>
 <li>Problem: Rewrite previous example using &#39;request&#39;. Be sure you save its dependency in package.json</li>
 </ul>
 </div>
       <div class='step' >
     
-<h3>12:00pm - 1:15pm : Lunch</h3>
-
-<ul>
-<li>lunchtime preview: 
-
-<ul>
-<li>coffee-script in your applications</li>
-<li>coffee-script in your modules</li>
-</ul></li>
-</ul>
+<h2>12:00pm - 1:15pm : Lunch</h2>
 </div>
       <div class='step' >
     
@@ -205,11 +203,12 @@
       <div class='step' >
     
 <ul>
-<li><p>Problem: Create a simple express app that lets you upload an image, which can then be dowloaded via a link.</p>
+<li><p>Problem: Create a simple express app that lets you upload an image, which is then shown to the user.</p>
 
 <ul>
 <li>to complete this you&#39;ll create a simple express site, add routes and views which present a form to a user and accept a multipart POST from the form. </li>
-<li>Bonus: use the &#39;gm&#39; module to resize your images upon upload to save a thumbnail as well as original message. </li>
+<li>Bonus 1: use the &#39;gm&#39; module to resize your images upon upload to save a thumbnail as well as original message. </li>
+<li>Bonus 2: use the &#39;async&#39; module to create three different sizes of your uploaded image.</li>
 </ul></li>
 <li><p>More Learning: <a href="http://nodeschool.io/#expressworks">http://nodeschool.io/#expressworks</a></p></li>
 <li><p><a href="https://github.com/mcavage/node-restify">https://github.com/mcavage/node-restify</a></p></li>
@@ -275,7 +274,7 @@ for (var i = 0; i < os.cpus().length; i++) {
 </code></pre></div>
       <div class='step' >
     
-<h1><strong>Bonus</strong></h1>
+<h1><strong>More Learning:</strong></h1>
 </div>
       <div class='step' >
     

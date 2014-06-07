@@ -1,58 +1,61 @@
-
-/**
- * Module dependencies.
- */
-
-var auth = require('./lib/auth');
 var express = require('express');
-var routes = require('./routes');
-var user = require('./routes/user');
-var http = require('http');
 var path = require('path');
+var favicon = require('static-favicon');
+var logger = require('morgan');
+var cookieParser = require('cookie-parser');
+var bodyParser = require('body-parser');
+var multipart = require('connect-multiparty');
+
+var images = require('./routes/images');
+var users = require('./routes/users');
 
 var app = express();
 
-// all environments
-app.set('port', process.env.PORT || 3000);
+// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-// load liveReload script only in development mode
-// load before app.router
-// app.configure('development', function() {
-//   // live reload script
-//   var liveReloadPort = 35729;
-//   app.use(require('connect-livereload')({
-//     port: liveReloadPort
-//   }));
-// });
-
-app.use(express.favicon(__dirname + '/public/favicon.ico'));
-app.use(express.logger());
-app.use(express.cookieParser());
-app.use(express.bodyParser());
-app.use(express.json());
-app.use(express.urlencoded());
-app.use(express.methodOverride());
-app.use(express.session({ secret: 'keyboard cat' }));
-app.use(auth.passport.initialize());
-app.use(auth.passport.session());
-app.use(app.router);
+app.use(favicon());
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded());
+app.use(cookieParser());
+app.use(multipart());
 app.use(express.static(path.join(__dirname, 'public')));
 
-// development only
-if ('development' == app.get('env')) {
-  app.use(express.errorHandler());
+app.use('/', images);
+app.use('/users', users);
+
+/// catch 404 and forward to error handler
+app.use(function(req, res, next) {
+    var err = new Error('Not Found');
+    err.status = 404;
+    next(err);
+});
+
+/// error handlers
+
+// development error handler
+// will print stacktrace
+if (app.get('env') === 'development') {
+    app.use(function(err, req, res, next) {
+        res.status(err.status || 500);
+        res.render('error', {
+            message: err.message,
+            error: err
+        });
+    });
 }
 
-// apply auth routes
-auth.routes(app);
-
-app.get('/resize', routes.upload);
-app.post('/resize', routes.resize);
-app.get('/', auth.ensureAuthenticated, routes.index);
-app.get('/users', user.list);
-
-http.createServer(app).listen(app.get('port'), function(){
-	console.log('Express server listening on port ' + app.get('port'));
+// production error handler
+// no stacktraces leaked to user
+app.use(function(err, req, res, next) {
+    res.status(err.status || 500);
+    res.render('error', {
+        message: err.message,
+        error: {}
+    });
 });
+
+
+module.exports = app;

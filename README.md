@@ -8,7 +8,7 @@ Presenters: Matt Walters & Sahat Yalkabov
 
 #### Today we will:
 
-- Get up and running with nvm, npm, Node.js and Express.
+- Get up and running with nvm/n, npm, Node.js and Express.
 - Learn fundamental Node and JavaScript concepts like callbacks, events, and promises.
 - Become familiar with some of Node's most popular modules and learn their benefits.
 - Bootstrap a site and API with the latest tools like yeoman, bower, and others.
@@ -20,8 +20,12 @@ Presenters: Matt Walters & Sahat Yalkabov
 - install node
   - http://nodejs.org/download/
   - (even better) https://github.com/creationix/nvm
+  - or https://github.com/visionmedia/n
 - have an editor installed
+  - vi + http://vim.spf13.com/
   - http://www.sublimetext.com/2
+  - http://www.jetbrains.com/webstorm/
+  - Visual Studio + https://nodejstools.codeplex.com/
 
 ---
 
@@ -31,8 +35,11 @@ Presenters: Matt Walters & Sahat Yalkabov
 - variable scope, lifting, closures 
 - use strict
 - the event loop 
-- Pro Tip: refer to https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+
+---
+
 - Joint Walkthrough Coding:  Exploring and getting used to different code control flow techniques for asynchronous calls in JS. 
+- Pro Tip: refer to https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
 - More Learning: http://nodeschool.io/#functionaljs
   - http://nodeschool.io/#promiseitwonthurt
   - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/EventLoop
@@ -66,18 +73,14 @@ Presenters: Matt Walters & Sahat Yalkabov
 - Node.js module-making mantras (small, tested, single purpose, compose-able)
 - npm publish
 - Pro Tip: npm link
-- Pro Tip: how to re-use modules privately using github tarballs
+- Pro Tip: re-use private modules using github tarballs in package.json
 - Problem: Rewrite previous example using 'request'. Be sure you save its dependency in package.json
 
 ---
 
-### 12:00pm - 1:15pm : Lunch
-- lunchtime preview: 
-  - coffee-script in your applications
-  - coffee-script in your modules
+## 12:00pm - 1:15pm : Lunch
 
 ---
-
 
 ### 1:00pm - 1:45pm - Common Core Modules
 - console, process, events, stream, http, util, child_process
@@ -117,9 +120,10 @@ Presenters: Matt Walters & Sahat Yalkabov
 
 ---  
 
-- Problem: Create a simple express app that lets you upload an image, which can then be dowloaded via a link.
+- Problem: Create a simple express app that lets you upload an image, which is then shown to the user.
   - to complete this you'll create a simple express site, add routes and views which present a form to a user and accept a multipart POST from the form. 
-  - Bonus: use the 'gm' module to resize your images upon upload to save a thumbnail as well as original message. 
+  - Bonus 1: use the 'gm' module to resize your images upon upload to save a thumbnail as well as original message. 
+  - Bonus 2: use the 'async' module to create three different sizes of your uploaded image.
 
 - More Learning: http://nodeschool.io/#expressworks
 - https://github.com/mcavage/node-restify
@@ -184,7 +188,7 @@ for (var i = 0; i < os.cpus().length; i++) {
 
 ---
 
-# **Bonus**
+# **More Learning:**
 
 ---
 
