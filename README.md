@@ -34,7 +34,7 @@ Presenters: [Matt Walters](http://github.com/mateodelnorte) & [Sahat Yalkabov](h
 
 ---
 
-## 9:30am-10:30am: JavaScript Refresher
+## 9:30am-10:15am: JavaScript Refresher
 ### brief language overiew, callbacks, events, and promises
 - [numbers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) (which are just associative arrays), & [functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function) (which are just a special type of object)
 - asynchronous - callbacks, events & promises
@@ -44,7 +44,7 @@ Presenters: [Matt Walters](http://github.com/mateodelnorte) & [Sahat Yalkabov](h
 
 ---
 
-## 9:30am-10:30am: Groking JavaScript
+## 9:30am-10:15am: JavaScript Refresher
 - Joint Walkthrough Coding:  Exploring and getting used to different code control flow techniques for asynchronous calls in JS. 
 - Pro Tip: refer to https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
 - More Learning: http://nodeschool.io/#functionaljs
@@ -53,11 +53,11 @@ Presenters: [Matt Walters](http://github.com/mateodelnorte) & [Sahat Yalkabov](h
 
 ---
 
-# 10 min break
+# 15 min break
 
 ---
 
-## 10:40am - 11:15am: Groking Node
+## 10:30am - 11:15am: Groking Node
 - Understanding [V8](https://developers.google.com/v8/videos)
 - Understanding the Event Loop & async IO
   - http://stackoverflow.com/a/14797359/602377
@@ -72,7 +72,7 @@ Presenters: [Matt Walters](http://github.com/mateodelnorte) & [Sahat Yalkabov](h
 
 ---
 
-## 11:15pm - 12:00pm: NPM and Modules
+## 11:15am - 12:00pm: NPM and Modules
 - npm [init](https://www.npmjs.org/doc/cli/npm-init.html), [search](https://www.npmjs.org/doc/cli/npm-search.html), [info](https://www.npmjs.org/doc/cli/npm-view.html), [install](https://www.npmjs.org/doc/cli/npm-install.html) (& -g), [update](https://www.npmjs.org/doc/cli/npm-update.html), [home](https://www.npmjs.org/doc/cli/npm-repo.html)
   - --save, --save-dev
   - [semver](https://github.com/isaacs/node-semver#ranges)
@@ -113,11 +113,7 @@ Presenters: [Matt Walters](http://github.com/mateodelnorte) & [Sahat Yalkabov](h
 
 ---
 
-# 10 min break
-
----
-
-## 1:55pm - 3:15pm - Common Userland Modules
+## 1:45pm - 3:00pm - Common Userland Modules
 - '_npm home_ [express](expressjs.com)', [connect](https://github.com/senchalabs/connect), [jade](www.jade-lang.com)
 - '_npm home_ [underscore](documentcloud.github.com/underscore/)' (or [lodash](lodash.com/docs)), [async](https://github.com/caolan/async), [bluebird](https://github.com/petkaantonov/bluebird)
 - '_npm home_ [mocha](http://visionmedia.github.io/mocha/)', [request](https://github.com/mikeal/request), [mongoose](mongoosejs.com), [passport.js](passportjs.org)
@@ -126,9 +122,13 @@ Presenters: [Matt Walters](http://github.com/mateodelnorte) & [Sahat Yalkabov](h
   - learn connect and its usage inside [express](expressjs.com), by navigating [express](expressjs.com)' node_modules
   - Note: [Express](expressjs.com) 4.0 will not include middleware anymore. You'll need to include each in your package.json. This makes [express](expressjs.com), itself, and your apps more maintainable.
 
----  
+---
 
-## 1:55pm - 3:15pm - Common Userland Modules
+# 15 min break
+
+---
+
+## 1:55pm - 3:00pm - Common Userland Modules
 Problem:
 
   - 1) Create a simple [express](expressjs.com) app that lets you upload an image, which is then shown to the user. (To complete this you'll create a simple express site, add routes and views which present a form to a user and accept a multipart POST from the form.)
@@ -142,11 +142,7 @@ More Learning:
 
 ---
 
-# 10 min break
-
----
-
-## 3:25 - 4:30pm - Start Hacking
+## 3:00 - 3:45pm - Start Hacking
 - '_npm home_ [yeoman](http://yeoman.io/)'
 - '_npm home_ [bower](http://bower.io/)'
 - '_npm home_ [browserify](http://browserify.org/)'
@@ -155,7 +151,7 @@ More Learning:
 
 ---
 
-## 3:25 - 4:30pm - Start Hacking
+## 3:00 - 3:45pm - Start Hacking
 Problems: 
 
   - 1) Install [yeoman](http://yeoman.io/), install the '[browserify](http://browserify.org/)' generator and generate a new site. Choose [gulp](http://gulpjs.com/) when asked to do so. (if you have issues with SASS, redo and choose not to install when generating).
@@ -164,7 +160,7 @@ Problems:
 
 ---
 
-## 4:30 - 5:00pm - Deploying to heroku
+## 3:45pm - 4:00pm - Deploying to heroku
 - adding a Procfile
 - starting multiple executables
 
