@@ -58,7 +58,7 @@ Presenters: [Matt Walters](http://github.com/mateodelnorte) & [Sahat Yalkabov](h
 ---
 
 ## 10:40am - 11:15am: Groking Node
-- Understanding V8
+- Understanding [V8](https://developers.google.com/v8/videos)
 - Understanding the Event Loop & async IO
   - http://stackoverflow.com/a/14797359/602377
 - node, repl, files
