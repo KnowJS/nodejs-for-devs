@@ -90,8 +90,8 @@ Presenters: [Matt Walters](http://github.com/mateodelnorte) & [Sahat Yalkabov](h
 ---
 
 ## 1:00pm - 1:45pm - Common Core Modules
-- [console](nodejs.org/api/console.html), [process](nodejs.org/api/process.html), [events](nodejs.org/api/events.html), [stream](nodejs.org/api/stream.html), [http](nodejs.org/api/http.html), [util](nodejs.org/api/util.html), [child_process](nodejs.org/api/child_process.html)
-- [events](nodejs.org/api/events.html) - [on](http://nodejs.org/api/events.html#events_emitter_on_event_listener) vs [once](http://nodejs.org/api/events.html#events_emitter_once_event_listener), '[error](http://nodejs.org/api/events.html#events_class_events_eventemitter)' and '[uncaughtException](http://nodejs.org/api/process.html#process_event_uncaughtexception)'
+- [console](http://nodejs.org/api/console.html), [process](http://nodejs.org/api/process.html), [events](http://nodejs.org/api/events.html), [stream](http://nodejs.org/api/stream.html), [http](http://nodejs.org/api/http.html), [util](http://nodejs.org/api/util.html), [child_process](http://nodejs.org/api/child_process.html)
+- [events](http://nodejs.org/api/events.html) - [on](http://nodejs.org/api/events.html#events_emitter_on_event_listener) vs [once](http://nodejs.org/api/events.html#events_emitter_once_event_listener), '[error](http://nodejs.org/api/events.html#events_class_events_eventemitter)' and '[uncaughtException](http://nodejs.org/api/process.html#process_event_uncaughtexception)'
 - [streams](http://nodejs.org/api/stream.html)\! like unix pipes, in code - [readable](http://nodejs.org/api/stream.html#stream_class_stream_readable), [writeable](http://nodejs.org/api/stream.html#stream_class_stream_writable), [duplex](http://nodejs.org/api/stream.html#stream_class_stream_duplex), [transform](http://nodejs.org/api/stream.html#stream_class_stream_transform)
   - [flowing mode vs non-flowing mode](http://nodejs.org/api/stream.html#stream_compatibility_with_older_node_versions)
   - https://github.com/substack/stream-handbook
@@ -114,13 +114,13 @@ Presenters: [Matt Walters](http://github.com/mateodelnorte) & [Sahat Yalkabov](h
 ---
 
 ## 1:45pm - 3:00pm - Common Userland Modules
-- '_npm home_ [express](expressjs.com)', [connect](https://github.com/senchalabs/connect), [jade](www.jade-lang.com)
-- '_npm home_ [underscore](documentcloud.github.com/underscore/)' (or [lodash](lodash.com/docs)), [async](https://github.com/caolan/async), [bluebird](https://github.com/petkaantonov/bluebird)
-- '_npm home_ [mocha](http://visionmedia.github.io/mocha/)', [request](https://github.com/mikeal/request), [mongoose](mongoosejs.com), [passport.js](passportjs.org)
+- '_npm home_ [express](http://expressjs.com)', [connect](https://github.com/senchalabs/connect), [jade](http://www.jade-lang.com)
+- '_npm home_ [underscore](http://documentcloud.github.com/underscore/)' (or [lodash](http://lodash.com/docs)), [async](https://github.com/caolan/async), [bluebird](https://github.com/petkaantonov/bluebird)
+- '_npm home_ [mocha](http://visionmedia.github.io/mocha/)', [request](https://github.com/mikeal/request), [mongoose](http://http://mongoosejs.com), [passport.js](http://passportjs.org)
 - Pro Tip: Favor modules that do one thing, but do it well. Compose these modules into larger modules and solutions.
 - Pro Tip: Navigating and learning to use modules - View the tests and examples!
-  - learn connect and its usage inside [express](expressjs.com), by navigating [express](expressjs.com)' node_modules
-  - Note: [Express](expressjs.com) 4.0 will not include middleware anymore. You'll need to include each in your package.json. This makes [express](expressjs.com), itself, and your apps more maintainable.
+  - learn connect and its usage inside [express](http://expressjs.com), by navigating [express](http://expressjs.com)' node_modules
+  - Note: [Express](http://expressjs.com) 4.0 will not include middleware anymore. You'll need to include each in your package.json. This makes [express](http://expressjs.com), itself, and your apps more maintainable.
 
 ---
 
@@ -131,7 +131,7 @@ Presenters: [Matt Walters](http://github.com/mateodelnorte) & [Sahat Yalkabov](h
 ## 1:55pm - 3:00pm - Common Userland Modules
 Problem:
 
-  - 1) Create a simple [express](expressjs.com) app that lets you upload an image, which is then shown to the user. (To complete this you'll create a simple express site, add routes and views which present a form to a user and accept a multipart POST from the form.)
+  - 1) Create a simple [express](http://expressjs.com) app that lets you upload an image, which is then shown to the user. (To complete this you'll create a simple express site, add routes and views which present a form to a user and accept a multipart POST from the form.)
   - Bonus 1) use the '[gm](http://aheckmann.github.io/gm/)' module to resize your images upon upload to save a thumbnail as well as original message. 
   - Bonus 2) use the '[async](https://github.com/caolan/async)' module to create three different sizes of your uploaded image.
 
