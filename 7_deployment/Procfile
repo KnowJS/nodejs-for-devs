@@ -1,1 +1,3 @@
-web: node app.js
+proxy: node proxy/proxy.js
+api: api/bin/www
+site: cd site && gulp

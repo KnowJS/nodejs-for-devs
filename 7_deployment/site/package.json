@@ -1,0 +1,42 @@
+{
+  "name": "bla",
+  "version": "0.0.0",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "devDependencies": {
+    "gulp": "3.6.2",
+    "gulp-autoprefixer": "0.0.7",
+    "gulp-cache": "0.1.11",
+    "gulp-changed": "0.3.0",
+    "gulp-clean": "0.2.4",
+    "gulp-concat": "2.2.0",
+    "gulp-csso": "0.2.8",
+    "gulp-imagemin": "0.5.0",
+    "gulp-jade": "0.5.0",
+    "gulp-jshint": "1.6.1",
+    "gulp-less": "1.2.3",
+    "gulp-livereload": "1.5.0",
+    "gulp-load-plugins": "0.5.1",
+    "gulp-size": "0.3.1",
+    "gulp-uglify": "0.3.0",
+    "gulp-util": "2.2.14",
+    "connect": "2.16.2",
+    "connect-livereload": "0.4.0",
+    "opn": "0.1.1",
+    "vinyl-source-stream": "0.1.1",
+    "browserify": "4.1.5",
+    "browserify-jade": "0.1.1",
+    "browserify-shim": "3.5.0",
+    "debowerify": "0.7.1",
+    "mocha": "1.19.0",
+    "should": "3.3.1",
+    "jshint-stylish": "0.2.0"
+  },
+  "dependencies": {
+    "backbone": "1.1.2",
+    "domready": "1.0.5",
+    "jquery": "2.1.1",
+    "lodash": "2.4.1"
+  }
+}

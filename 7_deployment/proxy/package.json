@@ -1,14 +1,14 @@
 {
-  "name": "7_deployment",
+  "name": "proxy",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "proxy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
-  "scripts": {
-    "preinstall": "make install-all"
+  "dependencies": {
+    "http-proxy": "^1.1.4"
   }
 }
