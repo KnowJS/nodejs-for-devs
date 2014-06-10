@@ -214,6 +214,41 @@ for (var i = 0; i < os.cpus().length; i++) {
 
 ---
 
+## **Error Handling:** in-place
+
+```javascript
+app.get('/', function(req, res) {
+  Item.find(function(err, items) {
+    if (err) {
+      return res.send(500, { message: err.message }
+    }
+    console.log(items);
+  });
+});
+```
+
+---
+
+## **Error Handling:** middleware
+
+```javascript
+app.get('/', function(req, res, next) {
+  Item.find(function(err, items) {
+    if (err) return next(err);
+    console.log(items);
+  });
+});
+```
+
+```javascript
+app.use(function(err, req, res, next) {
+  console.error(err.stack);
+  return res.send(500, { message: err.message });
+});
+```
+
+---
+
 ## Express REST API
 
 - [Build a RESTful API Using Node and Express 4](http://scotch.io/tutorials/javascript/build-a-restful-api-using-node-and-express-4)
