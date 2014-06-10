@@ -41,5 +41,5 @@ Promise.all(items)
  * And, we can chain them together and get all their resolved
  * values at once. 
  *
- * more info on promises in jQuery: https://gist.github.com/patrickleet/9905348
+ * more info on promises here: https://github.com/petkaantonov/bluebird#what-are-promises-and-why-should-i-use-them
  */ 
