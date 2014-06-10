@@ -25,7 +25,7 @@ router.post('/', function (req, res, next) {
            some place where you can manage disk space requirements, etc.
            examples: S3, CDN, Mongo GridFS. we'll just pipe to a file for
            simplicity */
-        var one = fs.createWriteStream(__dirname + '/../public/images/' + size + '.png');
+        var one = fs.createWriteStream(__dirname + '/../tmp/' + size + '.png');
         stdout.pipe(one);
         cb();
       });

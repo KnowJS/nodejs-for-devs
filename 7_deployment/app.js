@@ -21,6 +21,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(multipart());
+app.use(express.static(path.join(__dirname, 'tmp')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', images);
