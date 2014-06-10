@@ -3,6 +3,9 @@ API_PORT=3001
 PROXY_PORT=8080
 SITE_PORT=3000
 
+install-tools: 
+	npm install -g gulp bower
+
 install-api:
 	cd api && npm install;
 
@@ -10,9 +13,9 @@ install-proxy:
 	cd proxy && npm install;
 
 install-site:
-	cd site && npm install;
+	cd site && npm install && bower install;
 
-start: install-api install-proxy install-site ; ${MAKE} -j4 api proxy site  
+start: install-tools install-api install-proxy install-site ; ${MAKE} -j4 api proxy site  
 
 api: 
 	DEBUG=$(DEBUG) \
