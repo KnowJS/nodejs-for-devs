@@ -155,8 +155,8 @@ More Learning:
 Problems: 
 
   - 1) Install [yeoman](http://yeoman.io/), install the '[browserify](http://browserify.org/)' generator and generate a new site. Choose [gulp](http://gulpjs.com/) when asked to do so. (if you have issues with SASS, redo and choose not to install when generating).
-  - 2) Update the site you just created to make an ajax call back to a route to request some data. Display that data on the page. (You'll create an express route to do this)
-  - 3) Separate your API from your site by creating a new express site and a proxy using http-proxy. Keep each in a separate folder and start each individually, on different ports. Have your proxy direct all requests to the api subdomain of your app to your proxy and all other requests to your site.
+  - 2) Update the site you just created to make an ajax call back to the server. Do a GET request to a new route in your site and return a random word to the browser. When received in the browser, update the page to say Hello+Your_Word instead of 'Hello World'. Make the random-word-swap happen every time someone clicks the 'Learn more' button. User browserify to keep your code well organized. 
+  - 3) Separate your API from your site by creating a new express site and a proxy using http-proxy. Keep each in a separate folder and start each individually, on different ports. Use a regular expression to have your proxy direct all requests with a url including '/api' to the api, and all other requests to your site. 
 
 ---
 
