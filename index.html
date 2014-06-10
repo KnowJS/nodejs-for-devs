@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <link href="css/reset.css" rel="stylesheet" />
+    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="css/favicon.png" />
+    <link rel="apple-touch-icon" href="css/apple-touch-icon.png" />
+    <!-- Code Prettifier: -->
+<link href="css/highlight.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link href="css/style.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+  <div class="fallback-message">
+  <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+  <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+  </div>
+    <div id="impress">
+    <div class='step' >
+    
+<h1><strong><em>node.js</em></strong> for devs</h1>
+</div>
+      <div class='step' >
+    
+<h2>Get dangerous w/ Node in a day</h2>
+
+<p>Presenters: <a href="http://github.com/mateodelnorte">Matt Walters</a> &amp; <a href="http://github.com/sahat">Sahat Yalkabov</a></p>
+
+<h3>Today we will:</h3>
+
+<ul>
+<li>Get up and running with <a href="https://github.com/creationix/nvm">nvm</a>/<a href="https://github.com/visionmedia/n">n</a>, <a href="https://www.npmjs.org/">npm</a>, <a href="http://nodejs.org/about/">Node.js</a> and <a href="http://expressjs.com">Express</a>.</li>
+<li>Learn fundamental Node and JavaScript concepts like callbacks, events, and promises.</li>
+<li>Become familiar with some of Node&#39;s most popular modules and learn their benefits.</li>
+<li>Bootstrap a site and API with the latest tools like <a href="http://yeoman.io/">yeoman</a>, <a href="http://bower.io/">bower</a>, and others.</li>
+<li>Deploy your site to heroku or a cloud of your choice.</li>
+</ul>
+
+<h3>And more importantly:</h3>
+
+<ul>
+<li>Teach you where to look in order to more easily understand and learn Node on your own. </li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>9am-9:30am: Getting Setup</h2>
+
+<h3>(For anyone who isn&#39;t yet)</h3>
+
+<ul>
+<li>install node
+
+<ul>
+<li><a href="http://nodejs.org/download/">http://nodejs.org/download/</a></li>
+<li>(even better) <a href="https://github.com/creationix/nvm">https://github.com/creationix/nvm</a> </li>
+<li>or <a href="https://github.com/visionmedia/n">https://github.com/visionmedia/n</a></li>
+</ul></li>
+<li>have an editor installed
+
+<ul>
+<li>vi + <a href="http://vim.spf13.com/">http://vim.spf13.com/</a></li>
+<li><a href="http://www.sublimetext.com/2">http://www.sublimetext.com/2</a></li>
+<li><a href="http://www.jetbrains.com/webstorm/">http://www.jetbrains.com/webstorm/</a></li>
+<li>Visual Studio + <a href="https://nodejstools.codeplex.com/">https://nodejstools.codeplex.com/</a></li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>9:30am-10:15am: JavaScript Refresher</h2>
+
+<h3>brief language overiew, callbacks, events, and promises</h3>
+
+<ul>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">numbers</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">arrays</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">objects</a> (which are just associative arrays), &amp; <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function">functions</a> (which are just a special type of object)</li>
+<li>asynchronous - callbacks, events &amp; promises</li>
+<li>variable <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting">scope</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting">hoisting</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Closures">closures</a> </li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode">use strict</a></li>
+<li>the <a href="http://stackoverflow.com/questions/3272298/whats-an-event-loop-and-how-is-it-different-than-using-other-models">event loop</a> </li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>9:30am-10:15am: JavaScript Refresher</h2>
+
+<ul>
+<li>Joint Walkthrough Coding:  Exploring and getting used to different code control flow techniques for asynchronous calls in JS. </li>
+<li>Pro Tip: refer to <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript">https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript</a></li>
+<li>More Learning: <a href="http://nodeschool.io/#functionaljs">http://nodeschool.io/#functionaljs</a>
+
+<ul>
+<li><a href="http://nodeschool.io/#promiseitwonthurt">http://nodeschool.io/#promiseitwonthurt</a></li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/EventLoop">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/EventLoop</a></li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>15 min break</h1>
+</div>
+      <div class='step' >
+    
+<h2>10:30am - 11:15am: Groking Node</h2>
+
+<ul>
+<li>Understanding <a href="https://developers.google.com/v8/videos">V8</a></li>
+<li>Understanding the Event Loop &amp; async IO
+
+<ul>
+<li><a href="http://stackoverflow.com/a/14797359/602377">http://stackoverflow.com/a/14797359/602377</a></li>
+</ul></li>
+<li>node, repl, files</li>
+<li>The CommonJS Module System
+
+<ul>
+<li><a href="http://wiki.commonjs.org/wiki/Modules/1.1">require, exports, module.exports</a></li>
+<li><a href="http://stackoverflow.com/a/17944431/602377">http://stackoverflow.com/a/17944431/602377</a></li>
+</ul></li>
+<li>node core - quick intro - <a href="http://nodejs.org/api/http.html">http</a> &amp; <a href="http://nodejs.org/api/events.html">events</a></li>
+<li>Pro Tip: <a href="https://github.com/creationix/nvm">nvm</a> or <a href="https://github.com/visionmedia/n">n</a></li>
+<li>Joint Walkthrough Coding: Writing a simple version of curl, using only the &#39;<a href="http://nodejs.org/api/http.html">http</a>&#39; module</li>
+<li>More Learning: <a href="http://nodeschool.io/#learn-you-node">http://nodeschool.io/#learn-you-node</a></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>11:15am - 12:00pm: NPM and Modules</h2>
+
+<ul>
+<li>npm <a href="https://www.npmjs.org/doc/cli/npm-init.html">init</a>, <a href="https://www.npmjs.org/doc/cli/npm-search.html">search</a>, <a href="https://www.npmjs.org/doc/cli/npm-view.html">info</a>, <a href="https://www.npmjs.org/doc/cli/npm-install.html">install</a> (&amp; -g), <a href="https://www.npmjs.org/doc/cli/npm-update.html">update</a>, <a href="https://www.npmjs.org/doc/cli/npm-repo.html">home</a>
+
+<ul>
+<li>--save, --save-dev</li>
+<li><a href="https://github.com/isaacs/node-semver#ranges">semver</a></li>
+</ul></li>
+<li>node_modules + echo &quot;node_modules&quot; &gt;&gt; .gitignore</li>
+<li>Node.js module-making mantras (small, tested, single purpose, compose-able)</li>
+<li>npm <a href="https://www.npmjs.org/doc/cli/npm-publish.html">publish</a></li>
+<li>Pro Tip: npm <a href="https://www.npmjs.org/doc/cli/npm-link.html">link</a></li>
+<li>Pro Tip: <a href="https://www.npmjs.org/doc/json.html#Git-URLs-as-Dependencies">re-use private modules using github tarballs in package.json</a></li>
+<li>Problem: Rewrite previous example using &#39;request&#39;. Be sure you save its dependency in package.json</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>12:00pm - 1:00pm: Lunch</h2>
+</div>
+      <div class='step' >
+    
+<h2>1:00pm - 1:45pm - Common Core Modules</h2>
+
+<ul>
+<li><a href="nodejs.org/api/console.html">console</a>, <a href="nodejs.org/api/process.html">process</a>, <a href="nodejs.org/api/events.html">events</a>, <a href="nodejs.org/api/stream.html">stream</a>, <a href="nodejs.org/api/http.html">http</a>, <a href="nodejs.org/api/util.html">util</a>, <a href="nodejs.org/api/child_process.html">child_process</a></li>
+<li><a href="nodejs.org/api/events.html">events</a> - <a href="http://nodejs.org/api/events.html#events_emitter_on_event_listener">on</a> vs <a href="http://nodejs.org/api/events.html#events_emitter_once_event_listener">once</a>, &#39;<a href="http://nodejs.org/api/events.html#events_class_events_eventemitter">error</a>&#39; and &#39;<a href="http://nodejs.org/api/process.html#process_event_uncaughtexception">uncaughtException</a>&#39;</li>
+<li><a href="http://nodejs.org/api/stream.html">streams</a>! like unix pipes, in code - <a href="http://nodejs.org/api/stream.html#stream_class_stream_readable">readable</a>, <a href="http://nodejs.org/api/stream.html#stream_class_stream_writable">writeable</a>, <a href="http://nodejs.org/api/stream.html#stream_class_stream_duplex">duplex</a>, <a href="http://nodejs.org/api/stream.html#stream_class_stream_transform">transform</a>
+
+<ul>
+<li><a href="http://nodejs.org/api/stream.html#stream_compatibility_with_older_node_versions">flowing mode vs non-flowing mode</a></li>
+<li><a href="https://github.com/substack/stream-handbook">https://github.com/substack/stream-handbook</a></li>
+</ul></li>
+<li>Pro Tip: <a href="https://github.com/isaacs/readable-stream">https://github.com/isaacs/readable-stream</a></li>
+<li>Problems: 
+
+<ul>
+<li>Copy curl implementation and update to use &#39;readable&#39; event and read() method from stream api</li>
+<li>Copy previous solution and change to use pipe() to automatically control back pressure. </li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>1:00pm - 1:45pm - Common Core Modules</h2>
+
+<ul>
+<li>More Learning:  <a href="http://nodeschool.io/#stream-adventure">http://nodeschool.io/#stream-adventure</a>
+
+<ul>
+<li><a href="http://nodestreams.com/">http://nodestreams.com/</a></li>
+<li><a href="https://github.com/substack/stream-handbook">https://github.com/substack/stream-handbook</a></li>
+<li><a href="https://www.youtube.com/watch?v=UHZpk4LwCLE#t=1290">https://www.youtube.com/watch?v=UHZpk4LwCLE#t=1290</a></li>
+<li><a href="https://www.youtube.com/watch?v=9llfAByho98">https://www.youtube.com/watch?v=9llfAByho98</a></li>
+<li><a href="https://www.youtube.com/watch?v=IuMHaONGAmc">https://www.youtube.com/watch?v=IuMHaONGAmc</a></li>
+<li><a href="https://github.com/thlorenz/stream-viz">https://github.com/thlorenz/stream-viz</a></li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>1:45pm - 3:00pm - Common Userland Modules</h2>
+
+<ul>
+<li>&#39;<em>npm home</em> <a href="expressjs.com">express</a>&#39;, <a href="https://github.com/senchalabs/connect">connect</a>, <a href="www.jade-lang.com">jade</a></li>
+<li>&#39;<em>npm home</em> <a href="documentcloud.github.com/underscore/">underscore</a>&#39; (or <a href="lodash.com/docs">lodash</a>), <a href="https://github.com/caolan/async">async</a>, <a href="https://github.com/petkaantonov/bluebird">bluebird</a></li>
+<li>&#39;<em>npm home</em> <a href="http://visionmedia.github.io/mocha/">mocha</a>&#39;, <a href="https://github.com/mikeal/request">request</a>, <a href="mongoosejs.com">mongoose</a>, <a href="passportjs.org">passport.js</a></li>
+<li>Pro Tip: Favor modules that do one thing, but do it well. Compose these modules into larger modules and solutions.</li>
+<li>Pro Tip: Navigating and learning to use modules - View the tests and examples!
+
+<ul>
+<li>learn connect and its usage inside <a href="expressjs.com">express</a>, by navigating <a href="expressjs.com">express</a>&#39; node_modules</li>
+<li>Note: <a href="expressjs.com">Express</a> 4.0 will not include middleware anymore. You&#39;ll need to include each in your package.json. This makes <a href="expressjs.com">express</a>, itself, and your apps more maintainable.</li>
+</ul></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1>15 min break</h1>
+</div>
+      <div class='step' >
+    
+<h2>1:55pm - 3:00pm - Common Userland Modules</h2>
+
+<p>Problem:</p>
+
+<ul>
+<li>1) Create a simple <a href="expressjs.com">express</a> app that lets you upload an image, which is then shown to the user. (To complete this you&#39;ll create a simple express site, add routes and views which present a form to a user and accept a multipart POST from the form.)</li>
+<li>Bonus 1) use the &#39;<a href="http://aheckmann.github.io/gm/">gm</a>&#39; module to resize your images upon upload to save a thumbnail as well as original message. </li>
+<li>Bonus 2) use the &#39;<a href="https://github.com/caolan/async">async</a>&#39; module to create three different sizes of your uploaded image.</li>
+</ul>
+
+<p>More Learning: </p>
+
+<ul>
+<li><a href="http://nodeschool.io/#expressworks">http://nodeschool.io/#expressworks</a></li>
+<li><a href="https://github.com/mcavage/node-restify">https://github.com/mcavage/node-restify</a></li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>3:00 - 3:45pm - Start Hacking</h2>
+
+<ul>
+<li>&#39;<em>npm home</em> <a href="http://yeoman.io/">yeoman</a>&#39;</li>
+<li>&#39;<em>npm home</em> <a href="http://bower.io/">bower</a>&#39;</li>
+<li>&#39;<em>npm home</em> <a href="http://browserify.org/">browserify</a>&#39;</li>
+<li>&#39;<em>npm home</em> <a href="http://gulpjs.com/">gulp</a>&#39;</li>
+<li>&#39;<em>npm home</em> <a href="https://github.com/nodejitsu/node-http-proxy">http-proxy</a>&#39;</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>3:00 - 3:45pm - Start Hacking</h2>
+
+<p>Problems: </p>
+
+<ul>
+<li>1) Install <a href="http://yeoman.io/">yeoman</a>, install the &#39;<a href="http://browserify.org/">browserify</a>&#39; generator and generate a new site. Choose <a href="http://gulpjs.com/">gulp</a> when asked to do so. (if you have issues with SASS, redo and choose not to install when generating).</li>
+<li>2) Update the site you just created to make an ajax call back to a route to request some data. Display that data on the page. (You&#39;ll create an express route to do this)</li>
+<li>3) Separate your API from your site by creating a new express site and a proxy using http-proxy. Keep each in a separate folder and start each individually, on different ports. Have your proxy direct all requests to the api subdomain of your app to your proxy and all other requests to your site.</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h2>3:45pm - 4:00pm - Deploying to heroku</h2>
+
+<ul>
+<li>adding a Procfile</li>
+<li>starting multiple executables</li>
+</ul>
+
+<p>Problem: </p>
+
+<ul>
+<li>create a Procfile, heroku create, git push heroku master</li>
+</ul>
+</div>
+      <div class='step' >
+    
+<h1><strong>More Learning:</strong></h1>
+</div>
+      <div class='step' >
+    
+<h2><strong>async:</strong> waterfall</h2>
+<pre><code class='prettyprint javascript'>async.waterfall([
+  function(callback) {
+    callback(null, 'one', 'two');
+  },
+  function(arg1, arg2, callback) {
+    // Here arg1 is 'one' and arg2 is 'two'
+    callback(null);
+  },
+], function(err, results) {
+  // Optional callback when everything is finished
+});
+</code></pre></div>
+      <div class='step' >
+    
+<h2><strong>node.js:</strong> cluster</h2>
+<pre><code class='prettyprint javascript'>var os = require('os');
+var cluster = require('cluster');
+
+cluster.setupMaster({
+  exec: 'app.js'
+});
+
+cluster.on('exit', function(worker) {
+  console.log('Worker ' + worker.id + ' died');
+  cluster.fork();
+});
+
+for (var i = 0; i < os.cpus().length; i++) {
+  cluster.fork();
+}
+</code></pre></div>
+      <div class='step' >
+    
+<h2>Express REST API</h2>
+
+<ul>
+<li><a href="http://scotch.io/tutorials/javascript/build-a-restful-api-using-node-and-express-4">Build a RESTful API Using Node and Express 4</a></li>
+<li><a href="http://sahatyalkabov.com/create-a-tv-show-tracker-using-angularjs-nodejs-and-mongodb/">Create a TV Show Tracker using AngularJS, Node.js and MongoDB</a></li>
+</ul>
+
+<h2>File Upload</h2>
+
+<ul>
+<li><a href="http://jsrecipes.org/#!/backend/uploading-files">Upload files with Node.js</a></li>
+</ul>
+
+<h2>CSRF Protection</h2>
+
+<ul>
+<li><a href="http://jsrecipes.org/#!/backend/csrf-protection-with-express">CSRF Protection with Express</a></li>
+</ul>
+
+      </div>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+  </body>
+</html>
+    
