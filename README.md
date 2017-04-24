@@ -116,7 +116,7 @@ Presenters: [Matt Walters](http://github.com/mateodelnorte) & [Sahat Yalkabov](h
 ## 1:45pm - 3:00pm - Common Userland Modules
 - '_npm home_ [express](http://expressjs.com)', [connect](https://github.com/senchalabs/connect), [jade](http://www.jade-lang.com)
 - '_npm home_ [underscore](http://documentcloud.github.com/underscore/)' (or [lodash](http://lodash.com/docs)), [async](https://github.com/caolan/async), [bluebird](https://github.com/petkaantonov/bluebird)
-- '_npm home_ [mocha](http://visionmedia.github.io/mocha/)', [request](https://github.com/mikeal/request), [mongoose](http://http://mongoosejs.com), [passport.js](http://passportjs.org)
+- '_npm home_ [mocha](http://mochajs.org/)', [request](https://github.com/mikeal/request), [mongoose](http://http://mongoosejs.com), [passport.js](http://passportjs.org)
 - Pro Tip: Favor modules that do one thing, but do it well. Compose these modules into larger modules and solutions.
 - Pro Tip: Navigating and learning to use modules - View the tests and examples!
   - learn connect and its usage inside [express](http://expressjs.com), by navigating [express](http://expressjs.com)' node_modules
